@@ -1,0 +1,18 @@
+.app {
+  position: fixed;
+  width: 1000px;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  height: 80%;
+  background-color: #FFECB3;
+  box-shadow: 0 0 5px #70705a;
+  padding: 35px;
+}
+
+.message {
+  text-align: center;
+  font-size: 23px;
+  color: #212121;
+  text-transform: uppercase;
+}
