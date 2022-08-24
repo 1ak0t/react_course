@@ -1,11 +1,21 @@
+import {MessageType} from '../../types/messageType';
+import './message.scss';
+import dayjs from 'dayjs';
+
 type MessageProps = {
-  messageText: string;
+  message: MessageType;
 }
 
-function Message({messageText}: MessageProps) {
+function Message({message}: MessageProps) {
   return (
-    <div>
-        <h1 className="message">{messageText}</h1>
+    <div className="message">
+      <div className="message__wrapper">
+        <span className="message__text">{message.text}</span>
+        <div className="message__about">
+          <span className="message__author">{message.author}</span>
+          <span className="message__time">{dayjs().format('H:mm')}</span>
+        </div>
+      </div>
     </div>
   );
 }
