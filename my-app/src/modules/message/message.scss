@@ -1,0 +1,30 @@
+.message {
+  position: relative;
+  z-index: 5;
+
+  &__wrapper {
+    display: block;
+    padding: 5px 10px;
+    background-color: #ffffff;
+    margin-top: 10px;
+    border-radius: 6px;
+    position: relative;
+    z-index: 3;
+    text-align: right;
+  }
+
+  &__about {
+    display: flex;
+    justify-content: space-between;
+    font-size: 8px;
+    color: #9b9b9b;
+  }
+
+  &__text {
+    text-align: center;
+    font-size: 14px;
+    color: #212121;
+    position: relative;
+    z-index: 2;
+  }
+}
