@@ -2,15 +2,33 @@
   position: relative;
   z-index: 5;
 
+  &--left {
+    align-self: flex-start;
+  }
+
   &__wrapper {
     display: block;
     padding: 5px 10px;
-    background-color: #ffffff;
+    background-color: #efebf5;
     margin-top: 10px;
-    border-radius: 6px;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border-top-right-radius: 6px;
     position: relative;
     z-index: 3;
     text-align: right;
+    box-shadow: 1px 1px 2px #999999;
+    margin-bottom: 3px;
+
+    &--left {
+      background-color: #9f5ef7;
+      border-bottom-right-radius: 6px;
+      border-bottom-left-radius: 0;
+
+      .message__text {
+        color: #ffffff;
+      }
+    }
   }
 
   &__about {
@@ -23,7 +41,7 @@
   &__text {
     text-align: center;
     font-size: 14px;
-    color: #212121;
+    color: #9f5ef7;
     position: relative;
     z-index: 2;
   }

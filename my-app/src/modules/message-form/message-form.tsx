@@ -11,14 +11,15 @@ function MessageForm({sendMessage}: MessageFormProps) {
 
   const onSendHandler = (evt: FormEvent<HTMLFormElement>) => {
     evt.preventDefault();
-    if (messageInput !== null) {
-      sendMessage(messageInput.current?.value);
+    if (messageInput.current !== null) {
+      sendMessage(messageInput.current.value);
+      messageInput.current.value = '';
     }
   }
 
   return (
     <form action="" className="app__form form" onSubmit={(evt) => onSendHandler(evt)}>
-      <input type="text" className="form__input" ref={messageInput}/>
+      <input type="text" className="form__input" ref={messageInput} autoFocus={true}/>
       <input type="submit" className="form__button" value="Send"/>
     </form>
   );
