@@ -1,0 +1,16 @@
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  position: relative;
+
+  &__back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 0;
+    background-color: transparent;
+    font-size: 15px;
+  }
+}

@@ -1,13 +1,59 @@
 .chat-list {
-  margin: 0 30px 0 0;
-  background-color: #eadff9;
-  border-radius: 20px;
-  box-shadow: 1px 1px 3px #999999;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  &__profile {
+    display: flex;
+    align-items: center;
+  }
+
+  &__profile-photo {
+    width: 35px;
+    height: 35px;
+  }
+
+  &__profile-name {
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+    margin-left: 10px;
+  }
+
+  &__add-chat {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    bottom: 10px;
+    right: 39px;
+    border: 0;
+    background-color: #9f5ef7;
+    color: #ffffff;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+  }
 
   &__wrapper {
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin: 0 30px 0 0;
+    background-color: #eadff9;
+    border-radius: 20px;
+    box-shadow: 1px 1px 3px #999999;
+    height: 100%;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: #9f5ef7;
+
+    &:hover {
+      color: #ffffff;
+    }
   }
 
   &__item {
